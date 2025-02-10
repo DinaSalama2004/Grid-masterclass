@@ -1,0 +1,467 @@
+/* Begin Basic */
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+    font-weight: 700;
+}
+
+
+
+.fnt-arvo{
+    font-family: "Arvo", serif;
+}
+.ftn-mont{
+    font-family: "Montserrat", serif;
+}
+.w-400{
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+
+/* End Basics */
+
+
+
+
+/* Begin Container  */
+
+.items-container{
+    width: 100%;
+  
+    height: 100vh;
+   /* explicity */
+    grid-template-rows:repeat(3, minmax(400px,auto)); 
+
+    /* implicity */
+
+    grid-auto-rows:minmax(200px,auto);
+    grid-template-columns: repeat(12,1fr);
+
+    display: grid;
+    grid-template-areas: 
+
+    "i1 i1 i1 i1 i1 i1 i2 i2 i2 i2 i2 i2"  
+
+
+
+    "i3 i3 i3 i4 i4 i4 i4 i4 i4 i5 i5 i5"  
+
+
+    "i6 i6 i6 i7 i7 i7 i7 i7 i7 i5 i5 i5" 
+
+    " i8 i8 i8 i9 i9 i9 i10 i10 i10 i10 i10 i10"
+
+
+
+
+    /* "i1 i1 i1 i1 i2 i2 i2 i2"  
+    "i3 i3 i4 i4 i4 i4 i5 i5"  
+    "i6 i6 i7 i7 i7 i7 i5 i5" 
+    "i8 i8 i9 i9 i10 i10 i10 i10" */
+
+    ;
+}
+
+
+.items-container img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* End Container  */
+
+
+/* Begin Container items */
+
+
+
+h4{
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+h3{
+    color: #9fa3a7;
+    line-height: 26px;
+    font-size: 14px;
+}
+h2{
+    color: #ffffff;
+    line-height:36px;
+    font-size: 32px;
+}
+
+p{
+    color: #333333;
+    line-height: 32px;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+a {
+   
+    line-height: 26px;
+    font-size: 12px;
+}
+.download{
+    color: #27b9c2;
+    font-size: 14px;
+
+}
+.container{
+
+    width: 88%;
+    margin: auto;
+   
+}
+
+
+/* item 1  */
+
+.item1{
+    grid-area: i1;
+    overflow: hidden;
+
+}
+.item1 .container{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* background-color: aqua; */
+   
+
+}
+.content{
+    width: 80%;
+    /* background-color: #4685c4; */
+}
+
+
+/* item 2  */
+.item2{
+    grid-area: i2;
+background-color: #F7F8F9;
+}
+
+.item2 p{
+    font-size: 48px;
+  line-height: 60px;
+}
+.item2{
+    display: flex;
+    justify-content: center;align-items: center;
+
+}
+.item2 .container{
+    width: 75%;
+
+  
+   
+  
+    text-align: center;
+}
+
+
+
+/* item 3  */
+.item3{
+    grid-area: i3;
+    background-color: #F05638;
+    display: flex;
+ 
+    align-items: center;
+
+    text-align: center;
+ 
+}
+
+.item3 a{
+    color: #ffc80a;
+    text-decoration: none;
+}
+span{
+    vertical-align: middle;
+    margin-left: 5px;
+
+}
+.item3 p{
+    color: white;
+}
+
+.item3 .container{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+
+/* item4 */
+.item4{
+    grid-area: i4;
+    padding-bottom: 20px;
+}
+.item4 .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-top : 60px;
+}
+
+
+.item4 .content-with-image{
+    width: 40%;  
+}
+
+.item4 .image{
+    width: 30%;  
+}
+
+
+.item4 .content{
+    width: 50%;
+    padding-left: 20px;
+}
+
+
+
+
+/* item5 */
+
+.item5{
+    grid-area: i5;
+    background-color:#8F76BC;
+color: white;
+}
+
+.item5 .image{
+    display: flex;
+    flex-direction: column;
+    
+}
+.item5 h3,
+.item5 h2 {
+    
+    color: white;  /* Ensures all text inside item5 is white */
+}
+.item5 a {
+    background-color: #FFC80A;
+padding: 15px 25px;
+border-radius: 20px;
+border: 1px solid black;
+color: #181601;
+margin-top: 10%;
+}
+.item5 .image>h3{
+    font-size: 11px;
+}
+.item5 i{
+    color: #FFC80A;
+}
+.item5 .head{
+    padding: 3px 20px;
+ border-radius: 20px;
+    background-color: #8B72B6;
+    margin-bottom: 10px;
+}
+.item5 .container{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-block: 50px;
+width: 100%;
+
+}
+
+.item5 .image{
+    background-color: #7E64AD;
+    width: 100%;
+   overflow: hidden;
+   padding: 10%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item5 .image img{
+    width: 80%;
+}
+.item5 .content{
+    text-align: center;
+margin-top: 10%;
+}
+.item5 .content h3{
+    margin-bottom: 20%;
+}
+
+
+
+
+/* item 6 */
+
+.item6{
+    grid-area: i6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.item6 .image{
+    width: 60%;
+  
+}
+.item6 .image img{
+    width: 100%;
+}
+/* item7  */
+.item7{
+    grid-area: i7;
+    
+    background-color:#93B6B7;
+
+    display: flex;
+    flex-direction: column;
+align-items: center;
+padding-top: 20px;
+position: relative;
+
+}
+.item7 h6{
+    position: absolute;
+    left: 0;
+    left: 5%;
+    background-color: #F05638;
+    padding:  5px 15px;
+    border-radius: 10px;
+    color: white;
+}
+.item7 .content{
+    width: 30%;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.item7 p{
+    color: white;
+}
+.item7 .image{
+    width: 90%;
+position: relative;
+overflow: hidden;
+
+}
+.item7 .image img{
+    width: 100%;
+
+}
+.item7 .second-image{
+    position: absolute;
+right: 15%;
+top: 15%;
+
+}
+
+/* item 8  */
+
+
+.item8{
+    grid-area: i8;
+    background-color: #38D5F4;
+display: flex;
+justify-content: center;
+
+
+}
+.item8 .circle{
+    background-color: #35CFED;
+    width: 60%;
+    height: 100%;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.item8 .image{
+    width: 20%;
+}
+.item8 .circle img{
+    width: 100%;
+}
+.item8 p{
+    color: white;
+}
+
+/* item 9 */
+
+.item9{
+    grid-area: i9;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item9 p{
+    width: 60%;
+}
+.item9 h6{
+    color: white;
+    background-color: #7BC424;
+    padding:  5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* End Container items */
+
+
+
+
+
+.item10{
+    grid-area: i10;
+    background-color: #2C2C2C;
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center; 
+}
+.item10 .image{
+    width: 20%;
+}
+.item10 .image img{
+    width: 100%;
+}
+.item10 p{
+    color: white;
+    width: 30%;
+}
+
+
+
+
+
+
+/*  */
